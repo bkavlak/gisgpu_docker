@@ -1,5 +1,5 @@
 # gisGPU_docker
-Docker GPU Computing Environment for GIS and Remote Sensing Applications 
+Docker GPU Computing Container for GIS and Remote Sensing Applications 
 
 BUILD IMAGE
 ```
