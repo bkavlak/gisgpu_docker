@@ -3,7 +3,7 @@ Docker GPU Computing Environment for GIS and Remote Sensing Applications
 
 BUILD IMAGE
 ```
-docker build 'NAME:TAG' .
+docker build -t 'NAME:TAG' .
 ```
 
 TYPE:
