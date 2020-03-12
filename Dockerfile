@@ -1,4 +1,4 @@
-ARG CUDA=10.0
+ARG CUDA=10.1
 ARG CUDNN=7
 
 FROM nvidia/cuda:${CUDA}-cudnn${CUDNN}-runtime-ubuntu18.04
@@ -29,12 +29,17 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*    
 
+RUN apt-get update
+
+RUN python3 -m pip install --upgrade pip
+
 # install python package
 RUN pip3 --no-cache-dir install setuptools && \
     pip3 --no-cache-dir install wheel && \
-    pip3 install \
+    pip3 --no-cache-dir install \
+        imagecodecs \
         jupyterlab \
-        numpy \
+        numpy==1.16 \
         scipy \
         Pillow \
         matplotlib \
@@ -46,16 +51,9 @@ RUN pip3 --no-cache-dir install setuptools && \
         shapely \
         geopandas \
         rasterio \
-        tifffile
-
-RUN python3 -m pip install --upgrade pip
-
-# install deep learning framework
-RUN pip3 --no-cache-dir install \
-    https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-2.1.0-cp36-cp36m-manylinux2010_x86_64.whl \
-    keras
-
-RUN pip3 --no-cache-dir install --upgrade --force-reinstall tensorflow-gpu
+        tifffile \
+        tensorflow-gpu==2.1.0 \
+        keras
 
 WORKDIR "/edenazar/data"
 CMD ["/bin/bash"]
