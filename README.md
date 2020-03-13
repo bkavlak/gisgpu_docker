@@ -13,9 +13,9 @@ docker build -t 'NAME:TAG' .
 
 After it finishes all the downloading and setting without any error, type:
 ```
-sudo docker run -it --name 'NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUMEFILE':/data 'NAME:TAG' bash
+sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUMEFILE':/data 'NAME:TAG' bash
 ```
-*change names inside ' ' as your preference*
+* You should change names inside ' ' as your preference*
 
 You can add a volume to the container where you transfer files between the computer and the container.
 
@@ -30,6 +30,6 @@ If successful, you will see some links as below.
 http://127.0.0.1:888/?token......
 ```
 
-Copy the last link to a browser (like Chrome).
+Copy the last link to a browser (like Chrome). Hit ENTER.
 
 Enjoy!
