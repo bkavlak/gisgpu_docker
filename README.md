@@ -1,8 +1,29 @@
 # gisGPU_docker
 Docker GPU Computing Container for GIS and Remote Sensing Applications. This container is based on ubuntu-18.04 and Python 3.6
 
-In case you want to add or remove python packages go to ```# PART - 3 Install Python Packages``` in the Dockerfile and add or remove the package below  ``` pip3 install```. 
+In case you want to add or remove python packages go to ```# PART - 3 Install Python Packages``` in the Dockerfile and add or remove the package below  ``` pip3 install```.
 
+###### Package List:
+```
+imagecodecs
+jupyterlab
+numpy==1.16
+scipy
+Pillow
+matplotlib
+opencv-contrib-python
+scikit-image
+scikit-learn
+xgboost
+fiona
+shapely
+geopandas
+rasterio
+tifffile
+tensorflow-gpu==2.1.0
+keras
+
+```
 #### BUILD IMAGE:
 
 Go to the directory where ```Dockerfile``` resides and type:
