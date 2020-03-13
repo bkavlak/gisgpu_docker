@@ -1,5 +1,7 @@
 # gisGPU_docker
-Docker GPU Computing Container for GIS and Remote Sensing Applications 
+Docker GPU Computing Container for GIS and Remote Sensing Applications. This container is based on Python 3.6
+
+You can add desired packages to the Dockerfile below the ``` pip3 install``` part in case you need. 
 
 BUILD IMAGE
 ```
@@ -8,7 +10,7 @@ docker build -t 'NAME:TAG' .
 
 TYPE:
 ```
-sudo docker run -it --name 'NAME' --gpus all -p 8888:8888 -p 6006:6006 -v VOLUMEFILE:/data 'NAME:TAG' bash
+sudo docker run -it --name 'NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUMEFILE':/data 'NAME:TAG' bash
 ```
 TYPE:
 ```
