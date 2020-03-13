@@ -20,7 +20,7 @@ sudo docker run -it --name 'NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUM
 jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
 ```
 
-*SEE the links*
+*SEE the links!*
 
 #### COPY to browser:
 ```
