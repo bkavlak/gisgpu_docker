@@ -9,13 +9,13 @@ Go to the directory where ```Dockerfile``` resides and type:
 ```
 docker build -t 'NAME:TAG' .
 ```
-*You should change names inside ' . ' as your preference*
+*You should change names inside '___' as your preference*
 
 After it finishes all the downloading and setting without any error, type:
 ```
 sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUMEFILE':/data 'NAME:TAG' bash
 ```
-*You should change names inside ' . ' as your preference*
+*You should change names inside '___' as your preference*
 
 You can add a volume to the container where you transfer files between the computer and the container.
 
