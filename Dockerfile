@@ -1,4 +1,4 @@
-# Setting Environment
+# PART 1 - Setting Environment
 ARG CUDA=10.1
 ARG CUDNN=7
 
@@ -6,7 +6,7 @@ FROM nvidia/cuda:${CUDA}-cudnn${CUDNN}-runtime-ubuntu18.04
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install Dependencies    
+# PART 2 - Install Dependencies    
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\     
         build-essential \
         software-properties-common \
@@ -34,7 +34,7 @@ RUN apt-get update
 
 RUN python3 -m pip install --upgrade pip
 
-# Install Python Packages
+# PART 3 - Install Python Packages
 RUN pip3 --no-cache-dir install setuptools && \
     pip3 --no-cache-dir install wheel && \
     pip3 --no-cache-dir install \
@@ -56,6 +56,6 @@ RUN pip3 --no-cache-dir install setuptools && \
         tensorflow-gpu==2.1.0 \
         keras
 
-# Create User Working Directory 
+# PART 4 - Create User Working Directory 
 WORKDIR "/edenazar/data"
 CMD ["/bin/bash"]
