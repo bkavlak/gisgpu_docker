@@ -7,13 +7,13 @@ BUILD IMAGE
 ```
 docker build -t 'NAME:TAG' .
 ```
-!change names inside '' as your preference
+#### change names inside '' as your preference
 
 TYPE:
 ```
 sudo docker run -it --name 'NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUMEFILE':/data 'NAME:TAG' bash
 ```
-!change names inside '' as your preference
+#### change names inside '' as your preference
 
 TYPE:
 ```
