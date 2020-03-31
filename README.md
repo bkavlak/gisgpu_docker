@@ -52,7 +52,9 @@ sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006
 ```
 *You should change text inside '___' as your preference*
 
-You can add a volume to the container where you transfer files between the computer and the container. ('VOLUME DIRECTORY' = where you put your files on the local machine)
+You can add a volume to the container where you transfer files between the computer and the container.
+
+*('VOLUME DIRECTORY' = where you put your files on the local machine)*
 
 Run command starts the container and then you can run a Jupyter Notebook as below:
  
