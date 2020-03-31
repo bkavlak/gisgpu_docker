@@ -28,6 +28,13 @@ tensorflow-gpu==2.1.0
 keras
 
 ```
+
+#### PULL IMAGE
+
+```
+docker pull bkavlak/test:testgpu
+```
+*OR*
 #### BUILD IMAGE:
 
 Go to the directory where ```Dockerfile``` resides and type:
