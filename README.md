@@ -28,6 +28,9 @@ tensorflow-gpu==2.1.0
 keras
 
 ```
+#### Requirements:
+
+You need to install NVIDIA-docker dependencies as in here: https://github.com/NVIDIA/nvidia-docker
 
 #### PULL IMAGE:
 In case you don't need to configure the ```Dockerfile```
