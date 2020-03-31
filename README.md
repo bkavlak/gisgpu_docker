@@ -30,7 +30,7 @@ keras
 ```
 
 #### PULL IMAGE:
-
+In case you don't need to configure the ```Dockerfile```
 ```
 docker pull bkavlak/test:testgpu
 ```
