@@ -3,7 +3,7 @@
 
 Docker GPU Computing Container for GIS and Remote Sensing Applications. This container is based on ubuntu-18.04 and Python 3.6
 
-If you are not familiar with Docker, please first watch this perfect tutorial: https://www.youtube.com/watch?v=fqMOX6JJhGo&t=1550s 
+If you are not familiar with Docker, please first watch this perfect tutorial: https://www.youtube.com/watch?v=fqMOX6JJhGo&t=1550s (First half is enough to understand below).
 
 In case you want to add or remove python packages go to ```# PART - 3 Install Python Packages``` in the Dockerfile and add or remove the package below  ``` pip3 install```.
 
