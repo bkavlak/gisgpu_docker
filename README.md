@@ -37,6 +37,7 @@ docker pull bkavlak/gisgpu:base
 *OR*
 #### BUILD IMAGE:
 
+In case you want to configure the ```Dockerfile```
 Go to the directory where ```Dockerfile``` resides and type:
 ```
 docker build -t 'NAME:TAG' .
