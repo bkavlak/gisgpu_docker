@@ -45,7 +45,7 @@ docker build -t 'NAME:TAG' .
 
 After it finishes all the downloading and setting without any error, type:
 ```
-sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUME DIRECTORY':/data 'NAME:TAG' bash
+sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUME DIRECTORY':/edenazar/data 'NAME:TAG' bash
 ```
 *You should change text inside '___' as your preference*
 
