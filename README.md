@@ -56,6 +56,8 @@ You can add a volume to the container where you transfer files between the compu
 
 *('VOLUME DIRECTORY' = where you put your files on the local machine)*
 
+#### ON BASH:
+
 Run command starts the container and then you can run a Jupyter Notebook as below:
  
 ```
