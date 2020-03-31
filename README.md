@@ -74,4 +74,10 @@ http://127.0.0.1:888/?token......
 
 Copy the last link to a browser (like Chrome). Hit ENTER.
 
+Check whether GPU is identified by the container:
+```
+import tensorflow as tf
+
+tf.config.experimental.list_physical_devices('GPU')
+```
 Enjoy!
