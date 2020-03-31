@@ -29,7 +29,7 @@ keras
 
 ```
 
-#### PULL IMAGE
+#### PULL IMAGE:
 
 ```
 docker pull bkavlak/test:testgpu
@@ -43,13 +43,14 @@ docker build -t 'NAME:TAG' .
 ```
 *You should change text inside '___' as your preference*
 
-After it finishes all the downloading and setting without any error, type:
+#### RUN CONTAINER:
+
 ```
 sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006 -v 'VOLUME DIRECTORY':/edenazar/data 'NAME:TAG' bash
 ```
 *You should change text inside '___' as your preference*
 
-You can add a volume to the container where you transfer files between the computer and the container.
+You can add a volume to the container where you transfer files between the computer and the container. ('VOLUME DIRECTORY' = where you put your files on the local machine)
 
 Run command starts the container and then you can run a Jupyter Notebook as below:
  
