@@ -57,7 +57,7 @@ sudo docker run -it --name 'CONTAINER NAME' --gpus all -p 8888:8888 -p 6006:6006
 
 You can add a volume to the container where you transfer files between the computer and the container.
 
-###### *('VOLUME DIRECTORY' = where you put your files on the local machine)*
+###### *'VOLUME DIRECTORY' = where you put your files on the local machine*
 
 #### ON BASH:
 
