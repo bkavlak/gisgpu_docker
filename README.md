@@ -66,7 +66,7 @@ Run command starts the container and then you can run a Jupyter Notebook as belo
 ```
 jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
 ```
-If successful, you will see some links as below.
+If successful, you will see some links below.
 
 ```
 http://127.0.0.1:888/?token......
