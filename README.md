@@ -1,4 +1,4 @@
-# gisGPU_docker
+# gisgpu_docker
 - WORKS FOR LINUX DISTRIBUTION
 
 Docker GPU Computing Container for GIS and Remote Sensing Applications. This container is based on ubuntu-18.04 and Python 3.6
