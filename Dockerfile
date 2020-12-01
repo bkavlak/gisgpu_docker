@@ -56,6 +56,8 @@ RUN pip3 --no-cache-dir install setuptools && \
         tensorflow-gpu==2.1.0 \
         keras
 
+# Degisiklik
+
 # PART 4 - Create User Working Directory 
 WORKDIR "/edenazar/data"
 CMD ["/bin/bash"]
